@@ -1,0 +1,109 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "つみれ",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetScheduleIntent",
+                    "slots": [
+                        {
+                            "name": "rotation",
+                            "type": "rotation"
+                        },
+                        {
+                            "name": "salmonrun",
+                            "type": "salmonrun"
+                        },
+                        {
+                            "name": "stage",
+                            "type": "stage"
+                        }
+                    ],
+                    "samples": [
+                        "{salmonrun} の {rotation} の {stage} は何 ",
+                        "{salmonrun} の {rotation} の {stage} は ",
+                        "{salmonrun} は何",
+                        "{salmonrun} の {stage} は何",
+                        "{salmonrun} の {stage} は何処",
+                        "{rotation} の {salmonrun} はなに",
+                        "{rotation} の {salmonrun} の {stage} は何処 "
+                    ]
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "rotation",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "次",
+                                "synonyms": [
+                                    "今度"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "現在",
+                                "synonyms": [
+                                    "いま",
+                                    "今"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "salmonrun",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "サーモンラン",
+                                "synonyms": [
+                                    "バイト",
+                                    "鮭",
+                                    "しゃけ",
+                                    "サーモン"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "stage",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "ステージ",
+                                "synonyms": [
+                                    "場所",
+                                    "マップ"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
